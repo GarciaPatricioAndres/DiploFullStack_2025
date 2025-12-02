@@ -20,7 +20,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main    ## Renombra la rama principal de master a main
-git remote add origin https://github.com/GarciaPatricioAndres/Diplomatura_FullStack_2025.git    ## Añadimos un origen remoto, adonde vamos a subir nuestro codigo.
+git remote add origin https://github.com/GarciaPatricioAndres/DiploFullStack_2025.git    ## Añadimos un origen remoto, adonde vamos a subir nuestro codigo.
 git push -u origin main   ## Envia el ultimo commit a la rama principal (main), al repo de GitHub.
 git status  ## Para saber el estado del trabajo en relacion a Git.
 git pull  ## Trae los ultimos cambios directamnete desde el repo de GitHub.
