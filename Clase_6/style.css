@@ -1,0 +1,42 @@
+/* 
+Especificidad: Que tan especificos somos a la hora de poner estilos.
+Cascada: Dependiendo del orden de nuestro codigo, una instruccion podria tener mas precedencia, que otra.
+*/
+
+
+/* Selector universal (usado 1 o 2 veces como mucho, es para TODOS los elementos del HTML) */
+*{
+    color: red !important /* El !important es para saltar todas, TODAS las jerarquias y darle maxima jerarquia a esta propiedad; esto es MEGA MALA PRACTICA, nunca usarlo. */;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Selector de elementos */
+h1{
+    color:yellow;
+}
+/* Selector de clase */
+
+.titulo{
+    color:red;
+    font-weight: 400;
+    font-size: 48;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo-gris{
+    color:rgb(87, 87, 87);
+}
+
+/* Selector de ID (evitar usarlo, es mala practica, porque es muy individual y CSS es para generalizar y reutilizar; ademas de solo poder usarse 1 vez porque solo se puede usar 1 id unico en todo HTML)*/
+#titulo{
+    color:green;
+}
+
+
+/* El selector de clase, es mas espefico que el selector de elementos. */
+/* Cuando tengan la misma jerarquia, va a "ganar" el ultimo que se lea en el file (se lee de arriba a abajo) */
+
+/* De menos jerarquia a mas jerarquia, selector based:
+Universal -> Elementos -> Clase -> ID -> inline CSS - > !important*/
+
+/* Selector de ID, inline CSS (escribir estilos de CSS directamente en el HTML), y !important, estan desaconsejados, y considerados mala practica en cierto modo */

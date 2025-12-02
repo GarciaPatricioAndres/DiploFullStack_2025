@@ -1,0 +1,15 @@
+/* h1{
+    color: red;
+    font-size: 100px;
+    background-color: yellow;
+} */
+
+/* Selector de clases */
+/* Todos los que tengan la clase -titulo-, tendran este estilo */
+.titulo{
+    color:red
+}
+
+.titulo-especial{
+    color:blueviolet
+}

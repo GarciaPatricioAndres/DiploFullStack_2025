@@ -1,0 +1,63 @@
+Sintaxis
+HTML: Nos sirve para marcar la estructura de nuestra web.
+CSS: Nos permite hacer los estilos de nuestra web.
+JS: Nos permite hacer la funcionalidad en nuestra web.
+
+Etiquetas:
+    El tipo de etiqueta esta definido por el elemento.
+
+Autocierre
+* Generalmente, no tienen contenido (va todo en la misma etiqueta)
+    <img/> -> HTML 4 o versiones inferiores
+    <img> -> HTML 5 en adelante
+    <meta>
+
+Cierre
+* Generalmente, tienen la caracteristica de poder contener otras etiquetas y/o contenido (se pueden anidar etiquetas
+    <div></div>
+    <button></button>
+    <a></a>
+    <b></b>
+    <title></title>
+
+Elementos:
+    Los elementos tienen un significado o funcionalidad
+    
+    -img -> colocar imagenes
+    -div -> sirve para dividir codigo (secciones, elementos, partes de la pagina, etc)
+    -button -> crear botones
+    -a -> nos permite crear hipervinculos
+    -b (bold) -> nos permite formatear texto en negrita
+    -title -> titulo del documento (lo que aparece en la tab del navegador)
+    -meta -> permite hacer una configuracion sobre nuestro documento (basicamente es para metadatos)
+    -h1/6 -> Heading para el body. Estan jerarquizadas, de menor a mayor, o sea el 1 tiene mayor jerarquia que las demas, y el 6 el de menor jerarquia). Se pueden repetir.
+
+Atributos:
+    Son configuraciones sobre el elemento
+
+    Elemento img:
+    -src (source): direccion web valida donde esta la imagen que queremos presentar.
+    -width (ancho): cuanto ancho tendra nuestra imagen.
+
+    Elemento a:
+    -href (host reference): direccion web valida a la que nos redireccionara este vinculo.
+
+    Elemento meta:
+    -name: permite definir el tipo de metadato a configurar.
+
+Nesting (anidamiento):
+    Es la caracteristica de las etiquetas de cierre, de poder encerrar como contenido a otras etiquetas.
+    Ejemplo: <div><img/></div>
+
+    (quien anida se considera "padre" de las etiquetas "hijas" dentro del mismo)
+
+Identacion (Indent):
+    Poder marcar con tabulaciones, la jerarquia entre etiquetas HTML.
+
+    Ejemplo:
+    <div>
+        <button></button>
+    </div>
+
+
+## Viewport = todo el contenido de la pagina
