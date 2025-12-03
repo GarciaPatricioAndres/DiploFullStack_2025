@@ -1,0 +1,71 @@
+/* Flexbox:
+    Un padre/ordena a sus hijos.+
+    Cuando el padre es una flexbox, los hijos directos son flex-items.
+    Cuando un elemento es flexible, tienen ciertas configuraciones por defecto (por ej, flex-direction es row.
+    Cuando un elemento es flex, se habilitan las propiedades flexibles (solo se pueden aplicar a un elemento que es flexbox):
+        flex-direction: row;
+        justify-content: left;
+        
+    Justify-content:
+        space-evenly: Espaciar entre cada hijo  y los bordes el mismo valor.
+        space-between: el espacio sobrante entre cada hijo (no a los bordes).
+    
+    Displays:
+        block: ocupan todo el bloque (elementos: div, li)
+        Inline: Se pueden alinear, ocupan solo el contenido. No se pueden modificar sus dimensiones (elementos: span, a).
+        Inline-block: Se pueden alinear, ocupan solo el contenido, se pueden modificar sus dimensiones (elementos: img, input).
+        */
+
+/* Normalizacion */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    height: 100vh;
+    /* vh: viewport height, basicamente altura de la pantalla 100vh: 100% del alto de la pantalla, del viewport
+    1vh: 1% del alto del viewport.
+    Es una medida relativa (porcentaje).
+    Depende del display (no es lo mismo en un celular que en un monitor).*/
+    /* width: 100vh; */ /* 100% del ancho de la pantalla */
+    background-color: blueviolet;
+    display: flex; /* Hacemos que el padre sea una flexbox */
+    flex-direction: row;
+    gap: 20px;
+    /* Cuando flex-direction sea row, justify-content ajusta el eje x (horizontal).
+    Cuando flex-direction sea column, justify-content ajusta el eje y (vertical)*/
+    /* Cuando me sobra espacio, puedo usar los valores de spacing: space-evenly, space-between, space-around, entre otros. */
+    justify-content: space-evenly;
+}
+
+.hijo{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.hijo-1{
+    background-color: blue;
+}
+
+.hijo-2{
+    background-color: red;
+}
+
+.hijo-3{
+    background-color: green;
+}
+/* .padre-2{
+    background-color: aqua;
+} */
+
+header{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0px 40px;
+}
