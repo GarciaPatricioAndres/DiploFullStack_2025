@@ -1,0 +1,63 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color: yellow;
+    --placeholder-color: #767676;
+    --search-color: #666666;
+    --search-border-color: #e6e6e6;
+    --ff-text: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-text);
+}
+
+header{
+    background-color: var(--primary-color);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__search-products-form{
+    background-color: white;
+    width: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 /* horizontal */1px /* vertical */2px /* blur */0 rgba(0, 0, 0, 0.209);
+}
+
+.header__search-products-form input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 10px 60px 10px 15px;
+}
+
+.header__search-products-form input::placeholder{
+    color: var(--placeholder-color);
+    font-size: 12px;
+}
+
+.header__search-products-form input:focus-visible{
+    outline: none;
+}
+
+.header__search-btn{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    right: 20px;
+    padding-left: 16px;
+    border-left: 1px solid var(--search-border-color);
+    height:70%;
+}
+.header__search-btn i{
+    color: var(--search-color);
+}

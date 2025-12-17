@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padre{
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+    position: relative;
+    width: 70vw;
+}
+.hijo{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+.hijo-1{
+    z-index: 2;
+}
+.hijo-2-antiguo{
+    position: relative; /* desde posicion original, se mueve segun lo indicado abajo */
+    top: 50px; /* lo movi 50 pixeles desde arriba, entonces se mueve para abajo. Top tiene mas precedencia, que bottom (o sea que top siempre "va a ganar" si se declaran ambas). Y left tiene mas precedencia que right. */
+    left: 50px;
+    z-index: 1; /* esto indica la prioridad en cuanto a profundidad de cada objeto (cual va encima de uno u otro). Mayor numero, mas prioridad. */
+}
+.hijo-2{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute; /* no existe mas la posicion original. Queda por fuera del flexbox. */
+    right: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hijo-3{
+    z-index: 3;
+}

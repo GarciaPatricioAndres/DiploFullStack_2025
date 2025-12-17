@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        *{
+            color: white;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .chat{
+            background-color: rgba(112, 107, 107, 0.813);
+            margin: 50px ;
+            border-radius: 16px;
+            /* overflow: hidden; */ /* sirve para esconder cosas, de acuerdo a jerarquias. */
+        }
+        .chat-header{
+            background-color: rgb(50, 47, 47);
+            height: 50px;
+            display: flex;
+            padding: 10px;
+            font-family: sans-serif;
+            position: sticky;
+            top: 0;
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+        }
+        .chat-content{
+            padding: 10px;
+            background-color: rgb(2, 2, 40);
+            margin: 10px;
+            height: 150vh;
+            border-radius: 11px;
+        }
+        .copy-btn{
+            background-color: grey;
+            border: none;
+            padding: 2px;
+            border-radius: 2px;
+            transition: ease-in-out 0.5s;
+            
+        }
+
+        .copy-btn:hover{
+            background-color: red;
+            transition: ease-in-out 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div class="chat-header">
+            <button class="copy-btn">Copiar</button>
+        </div>
+        <div class="chat-content">
+        </div>
+    </div>
+</body>
+</html>

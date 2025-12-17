@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root{
+    --color-primario: #3d325c;
+    --color-secundario: #ab9ff2;
+    --bg-color: #f5f2ff;
+    --color-barra: #fdfcfe;
+    --color-barra-sel: #e2dffe;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+    color: var(--color-primario) /* utilizo la variable de color primario */
+}
+/* Resetear los estilos de lista (puntitos, etc) */
+ul, ol{
+    list-style: none;
+}
+
+button{
+    border-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--bg-color);
+    padding: 0px 32px;
+}
+
+.logo-container{
+    width: 150px;
+    height: 30px;
+}
+
+.nav-item{
+    padding: 12px 24px;
+    font-weight: 500px;
+}
+
+.nav-item:hover{
+    background-color: var(--color-barra-sel);
+    border-radius: 92px;
+    cursor: pointer;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-barra);
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.content{
+    display: flex;
+    width: 1500px;
+    height: 90px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.btn-primary{
+    padding: 16px 32px;
+    border-radius: 100px;
+    background-color: var(--color-secundario);
+    font-weight: 700px;
+}
+
+.btn-secondary{
+    padding: 16px;
+    font-size: 20px;
+    height: 56px;
+    width: 56px;
+    border-radius: 100%;
+    background: var(--color-barra);
+}
+
+.btn-secondary:hover{
+    background-color:var(--color-barra-sel) ;
+}
+
+.btn-primary:hover{
+    background-color:var(--color-barra-sel) ;
+}
+
+.btn-menu{
+    display: none;
+}
+
+.mobile-logo{
+    display: none;
+}
+
+/* Cuando el tamaño de la pantalla sea menor a 1200px */
+/* @media screen and (max-width: 1200px){
+    body{
+        background-color: red;
+    }
+}
+ */
+@media screen and (max-width: 1280px){
+    header nav{
+        display: none;
+    }
+    .btn-secondary{
+        display: none;
+    }
+    .btn-menu{
+        display: flex;
+    }
+}
+
+/* Otra sintaxis para las media querys, sin screen y and */
+@media (width < 770px){
+    .header-logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: flex;
+        width: 35px;
+        height: 30px;
+    }
+    .btn-primary{
+        font-size: 14px;
+        padding: 16px 24px;
+    }
+    .logo-container{
+        width: 35px;
+        height: 50px:
+    }
+    .header{
+        height: 81px;
+        padding:0px;
+    }
+    .content{
+        padding: 16px 20px;
+        height:80px;
+    } */
+}
