@@ -21,7 +21,7 @@ for (let i = 1; i <= cantidadNotas; i++) {
 }
 
 promedio = notaTotal / cantidadNotas
-alert('El promedio de nota es: ' + promedio)
+console.log('El promedio de nota es: ' + promedio)
 
 
 
