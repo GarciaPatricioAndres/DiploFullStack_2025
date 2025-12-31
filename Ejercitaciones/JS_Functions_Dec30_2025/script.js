@@ -40,7 +40,7 @@ function solicitarNumero(mensaje) {
     while (!validarNumeroPositivo(valor)) {
         valor = pedirInput(mensaje)
     }
-    return valor
+    return Number(valor)
 }
 
 function solicitarNumeroPositivo(mensaje) {
@@ -48,7 +48,7 @@ function solicitarNumeroPositivo(mensaje) {
     while (!validarNumeroPositivoEntero(valor)) {
         valor = pedirInput(mensaje)
     }
-    return valor
+    return Number(valor)
 }
 
 function promediar(sumatoria, cantidad_numeros) {
